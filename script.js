@@ -8,7 +8,7 @@ const resultContainer = document.querySelector(".result-container");
 
 const quizCategory = 'Programming';
 var currentQuestion = null;
-let numberOfQuestions = 5;
+let numberOfQuestions = 25;
 var correctAnswerCount = 0;
 const QUIZ_TIME_LIMIT = 5;
 let currentTime = QUIZ_TIME_LIMIT;
