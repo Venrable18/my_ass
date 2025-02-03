@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="config-container">
+        <h2 class="config-title">Quiz</h2>
+
+        <div class="config-option">
+            <h4 class="option-title">Select cat</h4>
+            <div class="category-options">
+                <button class="category-option active">programming</button>
+                <button class="category-option">Maths</button>
+                <button class="category-option">Logar</button>
+                <button class="category-option">Indices</button>
+            </div>
+        </div>
+
+
+        <div class="config-option">
+            <h4 class="option-title">No.Of questions</h4>
+            <div class="question-options">
+                <button class="question-option">5</button>
+                <button class="question-option">10</button>
+                <button class="question-option">15</button>
+                <button class="question-option">20</button>
+            </div>
+        </div>
+
+        <button class="start-quiz-btn">Start</button>
+    </div>
+
+
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h2 class="quiz-title">Quiz appl</h2>
+            <div class="quiz-timer">
+                <p class="time-duration"></p>
+            </div>
+        </header>
+
+        <div class="quiz-content">
+            <h1 class="quiz-question"></h1>
+            <ul class="answer-options">
+            </ul>
+        </div>
+
+        <div class="quiz-footer">
+            <p class="question-status"></p>
+            <button class="next-question-btn">Next Ques</button>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <h2 class="result-title">Quiz-Completed</h2>
+        <p class="result-message"></p>
+        <button class="try-again-btn">Try Again</button>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

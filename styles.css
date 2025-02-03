@@ -1,0 +1,233 @@
+* {
+    font-family: cursive;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: gray;
+    padding: 15px;
+}
+
+:where(.config-container, .quiz-container, .result-container”) {
+    display: none;
+ background-color: white;
+ border-radius: 8px;
+ box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+.config-container {
+ background-color: white;
+ width: 415px;
+ padding: 20px;
+ text-align: center;
+ border-radius: 8px;
+ box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+.config-container .config-title {
+    font-size: 1.31rem;
+}
+
+.config-container .config-option {
+    margin-top: 25px;
+}
+
+.config-option .option-title {
+font-size: 1.2rem;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.config-option .category-options {
+display: grid;
+gap: 15px;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.config-option .question-options {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+padding: 0 30px;
+justify-content: center;
+}
+
+.config-option button {
+padding: 12px;
+font-size: 0.93rem;
+font-weight: 500;
+background: #fff;
+border-radius: 6px;
+cursor: pointer;
+border: 1px solid #9Bf888;
+transition: 0.3s ease;
+}
+
+.config-option button:hover, .quiz-content .answer-option:hover {
+background: rgba(197, 66, 66, 0);
+}
+
+.question-options button {
+    flex: 1 1 10%;
+
+}
+
+.config-container .start-quiz-btn, 
+.quiz-footer .next-question-btn,
+.result-container .try-again-btn {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: #512251;
+    padding: 13px 25px;
+    font: 1rem;
+    border-radius: 6px;
+
+}
+
+.config-container .start-quiz-btn {
+margin-top: 30px;
+}
+
+.config-container .start-quiz-btn:hover, 
+.quiz-footer .next-question-btn:hover,
+.result-container .try-again-btn:hover {
+    background: green;
+
+}
+
+.config-container .config-title {
+    font-size: 1.31rem;
+}
+
+.config-container .config-option {
+    margin-top: 25px;
+}
+
+.quiz-container {
+    width: 480px;
+}
+
+.quiz-container .quiz-header {
+display: flex;
+align-items: center;
+padding: 14px 25px;
+justify-content: flex-between;
+box-shadow: 0  3px 6px rgba(0, 0, 0, 009);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header .quiz-title {
+    font-size: 1.43rem;
+    font-weight: 700;
+}
+
+.quiz-content .quiz-question {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.quiz-container .quiz-content {
+padding: 20px 25px 25px;
+}
+
+
+.quiz-header .quiz-timer {
+    display: flex;
+    width: 70px;
+    color: #000;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    padding: 7px 9px;
+    border-radius: 6px;
+    background: green;
+}
+
+
+.quiz-content .answer-options {
+display: block;
+justify-content: center;
+gap: 15px;   
+list-style: none;
+  margin-top: 20px;
+}
+
+.quiz-content .answer-option {
+padding: 13px 16px;
+background: #f3f11f;
+border: 1px solid yellow;
+border-radius: 6px;
+font-weight: 600;
+cursor: pointer;
+transition:0.3s ease;
+margin-bottom: 12px;
+}
+
+.quiz-container .quiz-footer {
+padding: 15px 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-top: 1px solid #c6c6c6;
+}
+
+.quiz-footer, .question-status {
+font-weight: 500;
+}
+
+.quiz-footer, .question-status b,
+.result-container .result-message b {
+ font-weight: 600;
+}
+.quiz-footer .next-question-btn {
+display: inline-flex;
+visibility: hidden;
+gap: 5px;
+align-items: center;
+padding: 9px 17px;
+ }
+
+.correct {
+border-color: #F4BEC3;
+background: #F8D7DA;
+color: #721C24;
+}
+
+.incorrect {
+border-color: #B7E1C1;
+background: #D4EDDA;
+color: #155724;
+}
+
+.result-container {
+text-align: center;
+padding: 40px;
+width: 410px;
+}
+
+.result-container .result-title {
+margin-top: 30px;
+}
+
+.result-container .result-message {
+font-size: 1.12rem;
+font-weight: 500;
+margin-top: 15px;
+}
+
+.result-container .try-again-btn {
+margin-top: 30px;
+padding: 12px 20px;
+}
